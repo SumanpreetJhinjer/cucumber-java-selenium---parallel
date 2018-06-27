@@ -1,0 +1,218 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7000472708,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login to EA Page",
+        "description": "",
+        "id": "ea-login-page;login-to-ea-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2124270467,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6316402684,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I browser the EA Login Page",
+            "match": {
+              "location": "EALoginTest.browseEALoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 591655305,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter my correct \"name1\" and \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name1",
+                  "offset": 20
+                },
+                {
+                  "val": "5",
+                  "offset": 32
+                }
+              ],
+              "location": "EALoginTest.enterUserCredentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117970786,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the login button",
+            "match": {
+              "location": "EALoginTest.LoginClick()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123677,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to see \"success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "success",
+                  "offset": 25
+                }
+              ],
+              "location": "EALoginTest.messageVerification(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4623490035,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login to EA Page",
+        "description": "",
+        "id": "ea-login-page;login-to-ea-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2358375467,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3793481709,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I browser the EA Login Page",
+            "match": {
+              "location": "EALoginTest.browseEALoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 312742739,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter my correct \"name2\" and \"7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name2",
+                  "offset": 20
+                },
+                {
+                  "val": "7",
+                  "offset": 32
+                }
+              ],
+              "location": "EALoginTest.enterUserCredentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 123220439,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the login button",
+            "match": {
+              "location": "EALoginTest.LoginClick()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109012,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to see \"Fail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fail",
+                  "offset": 25
+                }
+              ],
+              "location": "EALoginTest.messageVerification(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "EA login page",
+    "description": "To login to the EA Page",
+    "id": "ea-login-page",
+    "keyword": "Feature",
+    "uri": "EALogin.feature"
+  }
+]

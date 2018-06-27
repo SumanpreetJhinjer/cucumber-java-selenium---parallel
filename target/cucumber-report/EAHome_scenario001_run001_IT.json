@@ -1,0 +1,114 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: en"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 56158694582,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "on to EA Home Page",
+        "description": "",
+        "id": "ea-home-page;on-to-ea-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 6774962005,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15595063009,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the EA HOME PAGE for \"name1\" and \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name1",
+                  "offset": 30
+                },
+                {
+                  "val": "5",
+                  "offset": 42
+                }
+              ],
+              "location": "EAHomeTest.browseEAHomePage(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3205360228,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in user form as \"Mr.\", \"S\", \"Singh\", \"Jhinjer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr.",
+                  "offset": 24
+                },
+                {
+                  "val": "S",
+                  "offset": 31
+                },
+                {
+                  "val": "Singh",
+                  "offset": 36
+                },
+                {
+                  "val": "Jhinjer",
+                  "offset": 45
+                }
+              ],
+              "location": "EAHomeTest.fillEAHomeUserForm(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1284816775,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click the save button",
+            "match": {
+              "location": "EAHomeTest.saveClick()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "EA Home page",
+    "description": " to the EA Home Page",
+    "id": "ea-home-page",
+    "keyword": "Feature",
+    "uri": "target/parallel/features/EAHome_scenario001_run001_IT.feature"
+  }
+]
