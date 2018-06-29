@@ -34,7 +34,7 @@ public class EAHomePageObject extends BaseClass{
      @FindBy(how =How.NAME, using = "Hindi")
      public static WebElement cbHindi;
      
-     @FindBy(how =How.NAME, using = "Saves")
+     @FindBy(how =How.NAME, using = "Save")
      public static WebElement btnSave;
 
      
