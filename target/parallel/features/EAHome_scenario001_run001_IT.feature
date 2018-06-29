@@ -3,9 +3,6 @@
 Feature: EA Home page
    to the EA Home Page
 
-@Chrome
-@Firefox
-@IE
 Scenario: on to EA Home Page
 
 Given I am on the EA HOME PAGE for "name1" and "5"

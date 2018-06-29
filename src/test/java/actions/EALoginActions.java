@@ -1,6 +1,8 @@
 package actions;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.EALoginPgaeObject;
 
@@ -26,6 +28,8 @@ public class EALoginActions extends EALoginPgaeObject {
     
     public static void login() {
    	//Click Login
+    	WebDriverWait wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.elementToBeClickable(btnLogin));
     	btnLogin.submit();
     }
 }

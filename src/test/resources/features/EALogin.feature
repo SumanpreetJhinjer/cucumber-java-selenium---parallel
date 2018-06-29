@@ -1,6 +1,6 @@
 Feature: EA login page
   To login to the EA Page
-@Chrome @Firefox @IE
+
   Scenario Outline: Login to EA Page
     Given I browser the EA Login Page
     When I enter my correct "<userName>" and "<password>"

@@ -1,6 +1,6 @@
 Feature: EA Home page
    to the EA Home Page
-@Chrome @Firefox @IE
+
   Scenario Outline: on to EA Home Page
     Given I am on the EA HOME PAGE for "<userName>" and "<password>"
     When I fill in user form as "<title>", "<initial>", "<firstName>", "<middleName>"
