@@ -1,13 +1,15 @@
 stepDefs\EAHomeTest.class
 utility\BaseClass.class
+runner\cucableChrome.class
 EAHome_scenario002_run001_IT.class
-runner\CucableJavaTemplate.class
+runner\cucableFirefox.class
 pageObjects\EAHomePageObject.class
 pageObjects\EALoginPgaeObject.class
 actions\EALoginActions.class
 actions\EAHomeActions.class
 EAHome_scenario001_run001_IT.class
 stepDefs\EALoginTest.class
+runner\cucableIE.class
 EALogin_scenario002_run001_IT.class
 runner\cucable.class
 utility\Hooks.class

@@ -12,22 +12,22 @@
         "before": [
           {
             "result": {
-              "duration": 15064482888,
+              "duration": 10009806135,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setup()"
+              "location": "Hooks.setupChrome(Scenario)"
             }
           }
         ],
-        "line": 6,
+        "line": 9,
         "name": "Login to EA Page",
         "description": "",
         "id": "ea-login-page;login-to-ea-page",
         "after": [
           {
             "result": {
-              "duration": 990896332,
+              "duration": 2360624307,
               "status": "passed"
             },
             "match": {
@@ -40,10 +40,10 @@
         "steps": [
           {
             "result": {
-              "duration": 8296436503,
+              "duration": 2700341406,
               "status": "passed"
             },
-            "line": 8,
+            "line": 11,
             "name": "I browser the EA Login Page",
             "match": {
               "location": "EALoginTest.browseEALoginPage()"
@@ -52,10 +52,10 @@
           },
           {
             "result": {
-              "duration": 653054102,
+              "duration": 624779411,
               "status": "passed"
             },
-            "line": 9,
+            "line": 12,
             "name": "I enter my correct \"name2\" and \"7\"",
             "match": {
               "arguments": [
@@ -74,10 +74,10 @@
           },
           {
             "result": {
-              "duration": 1033109624,
+              "duration": 710290283,
               "status": "passed"
             },
-            "line": 10,
+            "line": 13,
             "name": "I click the login button",
             "match": {
               "location": "EALoginTest.LoginClick()"
@@ -86,10 +86,10 @@
           },
           {
             "result": {
-              "duration": 179940059,
+              "duration": 217301719,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "I should be able to see \"User Form\"",
             "match": {
               "arguments": [
@@ -101,6 +101,20 @@
               "location": "EALoginTest.messageVerification(String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Chrome"
+          },
+          {
+            "line": 7,
+            "name": "@Firefox"
+          },
+          {
+            "line": 8,
+            "name": "@IE"
           }
         ]
       }

@@ -3,6 +3,9 @@
 Feature: EA login page
   To login to the EA Page
 
+@Chrome
+@Firefox
+@IE
 Scenario: Login to EA Page
 
 Given I browser the EA Login Page

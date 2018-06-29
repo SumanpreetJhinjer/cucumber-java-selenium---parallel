@@ -12,22 +12,22 @@
         "before": [
           {
             "result": {
-              "duration": 15709126986,
+              "duration": 16038708816,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setup()"
+              "location": "Hooks.setupChrome(Scenario)"
             }
           }
         ],
-        "line": 6,
+        "line": 9,
         "name": "Login to EA Page",
         "description": "",
         "id": "ea-login-page;login-to-ea-page",
         "after": [
           {
             "result": {
-              "duration": 2965654588,
+              "duration": 3057765276,
               "status": "passed"
             },
             "match": {
@@ -40,10 +40,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7894964899,
+              "duration": 6946303341,
               "status": "passed"
             },
-            "line": 8,
+            "line": 11,
             "name": "I browser the EA Login Page",
             "match": {
               "location": "EALoginTest.browseEALoginPage()"
@@ -52,10 +52,10 @@
           },
           {
             "result": {
-              "duration": 619523586,
+              "duration": 1865193008,
               "status": "passed"
             },
-            "line": 9,
+            "line": 12,
             "name": "I enter my correct \"name1\" and \"5\"",
             "match": {
               "arguments": [
@@ -74,10 +74,10 @@
           },
           {
             "result": {
-              "duration": 818453125,
+              "duration": 1532843711,
               "status": "passed"
             },
-            "line": 10,
+            "line": 13,
             "name": "I click the login button",
             "match": {
               "location": "EALoginTest.LoginClick()"
@@ -86,10 +86,10 @@
           },
           {
             "result": {
-              "duration": 273239577,
+              "duration": 9371681874,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "I should be able to see \"User Form\"",
             "match": {
               "arguments": [
@@ -101,6 +101,20 @@
               "location": "EALoginTest.messageVerification(String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Chrome"
+          },
+          {
+            "line": 7,
+            "name": "@Firefox"
+          },
+          {
+            "line": 8,
+            "name": "@IE"
           }
         ]
       }
