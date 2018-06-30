@@ -20,7 +20,7 @@ limitations under the License.    --><!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.0.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.0.0]"> 
-  <title>Scenario Details - 2018/06/29 12:30:53</title>
+  <title>Scenario Details - 2018/06/30 04:45:25</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/dataTables.min.css"> 
@@ -37,7 +37,7 @@ limitations under the License.    --><!doctype html>
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2018/06/29 12:30:53</span> 
+    <span class="text-light">2018/06/30 04:45:25</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
@@ -71,10 +71,10 @@ limitations under the License.    --><!doctype html>
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
          <li class="list-group-item"><strong>4</strong> Steps</li> 
-         <li class="list-group-item"><strong>4</strong> passed</li> 
+         <li class="list-group-item"><strong>0</strong> passed</li> 
          <li class="list-group-item"><strong>0</strong> failed</li> 
-         <li class="list-group-item"><strong>0</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 12s 021ms</li> 
+         <li class="list-group-item"><strong>4</strong> skipped</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 05s 519ms</li> 
         </ul> 
        </div> 
       </div> 
@@ -100,12 +100,19 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 06s 342ms
+            0m 05s 509ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-danger">failed</span> 
           </div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left border border-danger"> 
+           <code>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14' System info: host: 'hi', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4' Driver info: driver.version: ChromeDriver at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247) at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129) at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142) at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:170) at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:159) at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:116) at utility.Hooks.setupChrome(Hooks.java:31) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.base/java.lang.reflect.Method.invoke(Method.java:564) at cucumber.runtime.Utils$1.call(Utils.java:40) at cucumber.runtime.Timeout.timeout(Timeout.java:16) at cucumber.runtime.Utils.invoke(Utils.java:34) at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60) at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224) at cucumber.runtime.Runtime.runHooks(Runtime.java:212) at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) at org.junit.runners.ParentRunner.run(ParentRunner.java:309) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) at org.junit.runners.ParentRunner.run(ParentRunner.java:309) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334) at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407) Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:41237 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14' System info: host: 'hi', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4' Driver info: driver.version: ChromeDriver at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620) ... 46 more Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:41237 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151) at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353) at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380) at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184) at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88) at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184) at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71) at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143) at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82) ... 47 more Caused by: java.net.ConnectException: Connection refused: connect at java.base/java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) at java.base/java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400) at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243) at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225) at java.base/java.net.PlainSocketImpl.connect(PlainSocketImpl.java:148) at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402) at java.base/java.net.Socket.connect(Socket.java:591) at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74) at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134) ... 60 more </code> 
+          </div> 
+          <div class="col-1"></div> 
          </div> </li> 
         <li class="list-group-item"> 
          <div class="row"> 
@@ -119,11 +126,11 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 03s 973ms
+            0m 00s 000ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-warning">skipped</span> 
           </div> 
          </div> 
          <div class="row"> 
@@ -137,11 +144,11 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 324ms
+            0m 00s 000ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-warning">skipped</span> 
           </div> 
          </div> 
          <div class="row"> 
@@ -155,11 +162,11 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 799ms
+            0m 00s 000ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-warning">skipped</span> 
           </div> 
          </div> 
          <div class="row"> 
@@ -173,11 +180,11 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 114ms
+            0m 00s 000ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-warning">skipped</span> 
           </div> 
          </div> </li> 
         <li class="list-group-item" style="opacity:.8"> 
@@ -193,12 +200,19 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 467ms
+            0m 00s 009ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+           <span class="text-danger">failed</span> 
           </div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left border border-danger"> 
+           <code>org.openqa.selenium.remote.SessionNotFoundException: no such session (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 9 milliseconds Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14' System info: host: 'hi', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4' Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\m\AppData\Local\Temp\scoped_dir6420_18973}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}] Session ID: be155c8f01592d3fe40a34f33d4611f9 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488) at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206) at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670) at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325) at utility.Hooks.tearDown(Hooks.java:58) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.base/java.lang.reflect.Method.invoke(Method.java:564) at cucumber.runtime.Utils$1.call(Utils.java:40) at cucumber.runtime.Timeout.timeout(Timeout.java:16) at cucumber.runtime.Utils.invoke(Utils.java:34) at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60) at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224) at cucumber.runtime.Runtime.runHooks(Runtime.java:212) at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) at org.junit.runners.ParentRunner.run(ParentRunner.java:309) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) at org.junit.runners.ParentRunner.run(ParentRunner.java:309) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334) at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407) </code> 
+          </div> 
+          <div class="col-1"></div> 
          </div> </li> 
        </ul> 
       </div> 
@@ -208,7 +222,7 @@ limitations under the License.    --><!doctype html>
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/06/29 12:30:53.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/06/30 04:45:25.</span> 
    </div> 
   </footer>
   <script src="js/jquery.min.js"></script> 
@@ -240,8 +254,8 @@ limitations under the License.    --><!doctype html>
   "data" : {
     "labels" : [ "Step 1", "Step 2", "Step 3", "Step 4" ],
     "datasets" : [ {
-      "data" : [ 3973.0, 324.0, 799.0, 114.0 ],
-      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)" ],
+      "data" : [ 0.0, 0.0, 0.0, 0.0 ],
+      "backgroundColor" : [ "rgba(255,193,7,1.000)", "rgba(255,193,7,1.000)", "rgba(255,193,7,1.000)", "rgba(255,193,7,1.000)" ],
       "label" : "Step runtime"
     } ]
   },

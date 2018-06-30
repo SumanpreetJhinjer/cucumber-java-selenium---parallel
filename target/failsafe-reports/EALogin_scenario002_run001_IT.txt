@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: EALogin_scenario002_run001_IT
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.2 s - in EALogin_scenario002_run001_IT
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.469 s - in EALogin_scenario002_run001_IT
