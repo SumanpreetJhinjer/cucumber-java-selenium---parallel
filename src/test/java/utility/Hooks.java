@@ -6,6 +6,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -42,6 +43,11 @@ public class Hooks {
 			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "//drivers//MicrosoftWebDriver.exe");
 
 			driver = new EdgeDriver();
+		}
+		else {
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("--headless");
+			driver = new ChromeDriver(chromeOptions);
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize(); // maximize the browser window
