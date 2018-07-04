@@ -25,6 +25,11 @@ public class Hooks {
 
 		String browserType =  System.getProperty("browser");
 		System.out.println("BROWSER TYPE " + browserType);
+		if(browserType==null) {
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("--headless");
+			driver = new ChromeDriver(chromeOptions);
+		}else {
 		if (browserType.equalsIgnoreCase("Chrome")) {
 			// initilize the browser object
 			System.setProperty("webdriver.chrome.driver",
@@ -44,13 +49,10 @@ public class Hooks {
 
 			driver = new EdgeDriver();
 		}
-		else {
-			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--headless");
-			driver = new ChromeDriver(chromeOptions);
+		
+		driver.manage().window().maximize(); // maximize the browser window
 		}
 		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize(); // maximize the browser window
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		System.out.println("Opened browser");
 
