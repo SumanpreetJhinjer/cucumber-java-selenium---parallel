@@ -26,6 +26,8 @@ public class Hooks {
 		String browserType =  System.getProperty("browser");
 		System.out.println("BROWSER TYPE " + browserType);
 		if(browserType==null) {
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "//drivers//chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--headless");
 			driver = new ChromeDriver(chromeOptions);
