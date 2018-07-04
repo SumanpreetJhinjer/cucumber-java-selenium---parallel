@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -26,11 +27,18 @@ public class Hooks {
 		String browserType =  System.getProperty("browser");
 		System.out.println("BROWSER TYPE " + browserType);
 		if(browserType==null) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "//drivers//chromedriver.exe");
-			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--headless");
-			driver = new ChromeDriver(chromeOptions);
+			 final ChromeOptions chromeOptions = new ChromeOptions();
+			    chromeOptions.setBinary("/path/to/google-chrome-stable");
+			    chromeOptions.addArguments("--headless");
+			    chromeOptions.addArguments("--disable-gpu");
+
+			    final DesiredCapabilities dc = new DesiredCapabilities();
+			    dc.setJavascriptEnabled(true);
+			    dc.setCapability(
+			        ChromeOptions.CAPABILITY, chromeOptions
+			    );
+
+			    driver = new ChromeDriver(dc);
 		}else {
 		if (browserType.equalsIgnoreCase("Chrome")) {
 			// initilize the browser object
