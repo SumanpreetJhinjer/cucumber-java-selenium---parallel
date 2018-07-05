@@ -28,7 +28,7 @@ public class Hooks {
 		System.out.println("BROWSER TYPE " + browserType);
 		if(browserType==null) {
 			 final ChromeOptions chromeOptions = new ChromeOptions();
-			    chromeOptions.setBinary("/usr/local/bin/chromedriver");
+			    chromeOptions.setBinary("/usr/bin/google-chrome-stable");
 			    chromeOptions.addArguments("--headless");
 			    chromeOptions.addArguments("--disable-gpu");
 
