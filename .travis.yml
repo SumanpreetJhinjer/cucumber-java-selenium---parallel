@@ -22,4 +22,4 @@ deploy:
   file: "/home/travis/build/SumanpreetJhinjer/cucumber-java-selenium---parallel/target/test-report/index.html"
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
