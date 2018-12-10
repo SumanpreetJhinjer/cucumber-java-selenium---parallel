@@ -15,15 +15,10 @@ script:
   - whereis google-chrome-stable
   - whereis chromedriver
   - "mvn clean verify"
-  
-jobs:
-  include:
-    - stage: GitHub Release
-      script: echo "Deploying to GitHub releases ..."
-      deploy:
-        provider: releases
-        api_key: d13e551925de35534d50d3659dd52e430f0b057d
-        skip_cleanup: true
-        on:
-          tags: false
+deploy:
+   provider: target
+   api_key: d13e551925de35534d50d3659dd52e430f0b057d
+   skip_cleanup: true
+   on:
+     tags: false
 
