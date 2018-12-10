@@ -16,8 +16,9 @@ script:
   - whereis chromedriver
   - "mvn clean verify"
 deploy:
-   provider: target
-   api_key: 62b3f599413c526089425bcc717789af39f9f350
+   provider: releases
+   api_key: "62b3f599413c526089425bcc717789af39f9f350"
+   file: "/home/travis/build/SumanpreetJhinjer/cucumber-java-selenium---parallel/target/test-report/index.html"
    skip_cleanup: true
    on:
      tags: false
