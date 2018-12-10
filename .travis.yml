@@ -17,7 +17,7 @@ script:
   - "mvn clean verify"
 deploy:
    provider: target
-   api_key: d13e551925de35534d50d3659dd52e430f0b057d
+   api_key: 62b3f599413c526089425bcc717789af39f9f350
    skip_cleanup: true
    on:
      tags: false
