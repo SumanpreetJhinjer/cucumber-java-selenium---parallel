@@ -15,7 +15,7 @@ script:
   - whereis google-chrome-stable
   - whereis chromedriver
   - "mvn clean verify"
-  deploy:
+deploy:
   provider: releases
   user: "jhinjerdevops@gmail.com"
   password: "jhinjer@9988711369"
