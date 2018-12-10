@@ -15,3 +15,11 @@ script:
   - whereis google-chrome-stable
   - whereis chromedriver
   - "mvn clean verify"
+  deploy:
+  provider: releases
+  user: "jhinjerdevops@gmail.com"
+  password: "jhinjer@9988711369"
+  file: "/home/travis/build/SumanpreetJhinjer/cucumber-java-selenium---parallel/target/test-report/index.html"
+  skip_cleanup: true
+  on:
+    tags: true
