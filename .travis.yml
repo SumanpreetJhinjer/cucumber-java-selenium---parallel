@@ -1,0 +1,27 @@
+language: java
+sudo: required
+jdk:
+  - oraclejdk8
+addons: # get google-chrome-stable
+  chrome: stable
+install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
+  - wget -N http://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip -P ~/
+  - unzip ~/chromedriver_linux64.zip -d ~/
+  - rm ~/chromedriver_linux64.zip
+  - sudo mv -f ~/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver 
+script:
+  - whereis google-chrome-stable
+  - whereis chromedriver
+  - "mvn clean verify"
+  
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $git_token  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
+
+
