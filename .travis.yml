@@ -15,5 +15,13 @@ script:
   - whereis google-chrome-stable
   - whereis chromedriver
   - "mvn clean verify"
+  
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $git_token  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
 
 
