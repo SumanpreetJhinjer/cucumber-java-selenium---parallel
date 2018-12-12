@@ -17,10 +17,10 @@ script:
   - "mvn clean verify"
   
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $git_token  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
+  provider: releases
+  api_key: $git_token
+  file: /home/travis/build/SumanpreetJhinjer/cucumber-java-selenium---parallel/target/test-report
+  skip_cleanup: true
   on:
     branch: master
 
